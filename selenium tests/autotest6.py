@@ -1,8 +1,7 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-
 import math
 import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 
 
@@ -30,7 +29,7 @@ try:
     robot_checkbox.click()
     robot_radio = browser.find_element(By.ID, 'robotsRule')
     robot_checked = bool(robot_radio.get_attribute("checked"))
-    print("value of robot radio: ", robot_checked, type(robot_checked))
+    print("value of robot radio: ", robot_checked)
     if robot_checked == True :
        print('checked')
     elif robot_checked == False:
